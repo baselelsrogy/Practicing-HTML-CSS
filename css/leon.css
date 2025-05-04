@@ -7,9 +7,6 @@
 body {
     font-family: "Work Sans", sans-serif;
 }
-.parent {
-    background-color: #eee;
-}
 .container {
     padding: 0 15px;
     margin: 0 auto;
@@ -70,7 +67,42 @@ body {
     transition: 0.3s;
 }
 .header .links .icon span:last-child {
-
     width: 100%; 
+}
+.header .links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #F6F6F6;
+    position: absolute;
+    right: 0;
+    top: calc(100% + 20px);
+    min-width: 200px;
+    display: none;
+}
+.header .links:hover ul{
+    display: block;
+}
+.header .links ul::before {
+    content: "";
+    position: absolute;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #F6F6F6 transparent;
+    right: 5px;
+    top: -20px;
+}
+.header .links ul li a {
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+    transition: 0.3s;
+    color: #333;
+}
+.header .links ul li a:hover {
+    padding-left: 25px;
+}
+.header .links ul li:not(:last-child) a {
+    border-bottom: 1px solid #DDD;
 }
 /* End Header */
