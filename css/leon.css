@@ -1,3 +1,7 @@
+/* Start Variables */
+:root {
+    --mainColor: #10cab7;
+}
 /* Start Global Rules */
 * {
     -webkit-box-sizing: border-box;
@@ -79,6 +83,7 @@ body {
     top: calc(100% + 20px);
     min-width: 200px;
     display: none;
+    z-index: 1;
 }
 .header .links:hover ul{
     display: block;
@@ -96,8 +101,8 @@ body {
     padding: 15px;
     display: block;
     text-decoration: none;
-    transition: 0.3s;
     color: #333;
+    transition: 0.3s;
 }
 .header .links ul li a:hover {
     padding-left: 25px;
@@ -106,3 +111,56 @@ body {
     border-bottom: 1px solid #DDD;
 }
 /* End Header */
+/* Start Landing Section */
+.landing {
+    background-image: url(../images/mountain.jpg);
+    background-size: cover;
+    height: calc(100vh - 64px);
+}
+.landing .intro-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    width: 320px;
+    max-width: 100%;
+    transform: translate(-50%, -50%);
+}
+.landing .intro-text h1 {
+    margin: 0;
+    color: var(--mainColor);
+    font-weight: bold;
+    font-size: 50px;
+}
+.landing .intro-text p {
+    font-size: 19px;
+    line-height: 1.8;
+}
+/* End Landing Section */
+/* Start Features */
+.features {
+    padding: 60px 0;
+    background-color: #F6F6F6;
+}
+.features .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+.features .feat {
+    padding: 20px;
+    text-align: center;
+}
+.features .feat i {
+    color: var(--mainColor);
+}
+.features .feat h3 {
+    font-weight: 800;
+    margin: 20px 0;
+}
+.features .feat p {
+    line-height: 1.8;
+    color: #777;
+    font-size: 17px;
+}
+/* End Features */
