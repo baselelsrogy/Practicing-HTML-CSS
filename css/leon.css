@@ -1,6 +1,7 @@
 /* Start Variables */
 :root {
     --mainColor: #10cab7;
+    --secColor: #2c4755;
 }
 /* Start Global Rules */
 * {
@@ -34,6 +35,30 @@ body {
     }
 }
 /* End Global Rules */
+/* Start Components */
+.special-hading {
+    color: #ebeced;
+    font-size: 100px;
+    text-align: center;
+    font-weight: 800;
+    margin: 0;
+    letter-spacing: -3px;
+}
+.special-hading + p {
+    margin: -30px 0 0;
+    text-align: center;
+    font-size: 20px;
+    color: #737373;
+}
+@media (max-width: 767px) {
+    .special-hading {
+        font-size: 60px;
+    }
+    .special-hading + p {
+        margin-top: -20px;
+    }
+}
+/* End Components */
 /* Strat Header */
 .header {
     padding: 20px;
@@ -164,3 +189,61 @@ body {
     font-size: 17px;
 }
 /* End Features */
+/* Start Services */
+.services {
+    padding: 60px 0;
+}
+.services .services-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 30px;
+    margin-top: 100px;
+}
+.services .services-content .srv {
+    display: flex;
+    margin-bottom: 40px;
+}
+@media (max-width: 767px) {
+    .services .services-content .srv {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+.services .services-content .srv i {
+    color: var(--mainColor);
+    flex-basis: 60px;
+}
+.services .services-content .srv .text {
+    flex: 1;
+}
+.services .services-content .srv .text h3 {
+    margin: 0 0 20px;
+}
+.services .services-content .srv .text p {
+    font-weight: 300;
+    color: #444;
+    line-height: 1.6;
+}
+.services .services-content .image {
+    text-align: center;
+    position: relative;
+}
+.services .services-content .image::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -50px;
+    background-color: var(--secColor);
+    width: 100px;
+    height: calc(100% + 100px);
+    z-index: -1;
+}
+.services .services-content .image img {
+    width: 260px;
+}
+@media (max-width: 1199px) {
+    .image-column {
+        display: none;
+    }
+}
+/* End Services */
