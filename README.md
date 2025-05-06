@@ -34,11 +34,11 @@ It demonstrates my understanding of semantic HTML structure, visual design, layo
 
 ## 🌐 Live Preview
 
-(You can add a link here if you host it on GitHub Pages or Netlify)
+- https://baselelsrogy.github.io/Practicing-HTML-CSS/
 
 ## 🙏 Credits
 
-Thanks to [Osama Elzero](https://elzero.org/) and the Elzero Web School channel for the clear and practical educational content.
+Thanks to [Osama Elzero](https://elzero.org/) and the [Elzero Web School](https://www.youtube.com/@ElzeroWebSchool) channel for the clear and practical educational content.
 
 ---
 
