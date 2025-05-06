@@ -2,6 +2,8 @@
 :root {
     --mainColor: #10cab7;
     --secColor: #2c4755;
+    --sectionPadding: 60px;
+    --mainBackGround: #F6F6F6;
 }
 /* Start Global Rules */
 * {
@@ -164,8 +166,8 @@ body {
 /* End Landing Section */
 /* Start Features */
 .features {
-    padding: 60px 0;
-    background-color: #F6F6F6;
+    padding: var(--sectionPadding) 0;
+    background-color: var(--mainBackGround);
 }
 .features .container {
     display: grid;
@@ -191,7 +193,7 @@ body {
 /* End Features */
 /* Start Services */
 .services {
-    padding: 60px 0;
+    padding: var(--sectionPadding) 0;
 }
 .services .services-content {
     display: grid;
@@ -247,3 +249,32 @@ body {
     }
 }
 /* End Services */
+/* Start Portfolio */
+.portfolio {
+    padding: var(--sectionPadding) 0;
+    background-color: var(--mainBackGround);
+}
+.portfolio .portfolio-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 30px;
+    margin-top: 80px;
+}
+.portfolio .portfolio-content .card {
+    background-color: white;
+}
+.portfolio .portfolio-content .card img {
+    max-width: 100%;
+}
+.portfolio .portfolio-content .card .info {
+    padding: 20px;
+}
+.portfolio .portfolio-content .card .info h3 {
+    margin: 0;
+}
+.portfolio .portfolio-content .card .info p {
+    color: #777;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+/* End Portfolio */
